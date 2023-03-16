@@ -1,0 +1,23 @@
+{
+    "name": "Cooking Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "cookwiki.html",
+      "default_icon": "assets/hello_extensions.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+     },
+     "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["fonts.js"]
+      }
+    ],
+    "permissions": [
+    "activeTab",
+    "storage"
+  ]
+  }

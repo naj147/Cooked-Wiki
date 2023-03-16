@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="fonts.js" crossorigin="anonymous"></script>
+      </head>
+  <body>
+    <h1>Cooking Summary Extension</h1>
+    <h3>Brought to you by <a href="https://github.com/naj147">AbElaine</a> </h3>
+   
+    <fieldset>
+        <legend>Select an action:</legend>
+        <div>
+          <input type="radio" id="featureOpen" name="action" value="true" checked>
+          <label for="open link in another tab">Open</label>
+        </div>
+        <div>
+          <input type="radio" id="featureCopy" name="action" value="false">
+          <label for="copy cooking link">Copy</label>
+        </div>
+    </fieldset>
+    <button id="action" class="btn orange"><i class="fa-solid fa-utensils"></i>Cook IT <br>(exec action)<br></button>
+    
+    <script src="cookIt.js"></script>
+  </body>
+</html>
